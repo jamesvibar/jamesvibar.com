@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="work-jv-wrapper barba-container" data-namespace="work">
+	<div class="jv-wrapper">
+		<div class="work-menu-wrapper">
+			<div id="workmenu" class="work-menu">
+				<div class="work-menu-container group">
+					<div class="work-controls group">
+						{{ if .PrevInSection }}
+						<span class="work-control"><a href="{{ .PrevInSection.Permalink }}">< {{ .PrevInSection.Title }}</a></span>
+						{{ end }}
+						
+						{{ if and (.PrevInSection) (.NextInSection) }}
+						<span class="work-control-divider work-control">|</span>
+						{{ end }}
+
+						{{ if .NextInSection }}
+						<span class="work-control"><a href="{{ .NextInSection.Permalink }}"> {{ .NextInSection.Title }} ></a></span>
+						{{ end }}
+					</div>
+					<span class="work-home"><a href="/">Back to home</a></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="work-container">
+			<div class="work-header group">
+				<div class="work-logo">
+					{{- if .Params.svg -}}
+					<svg class="work-svg">
+						<use xlink:href="/images/sprite.symbol.svg#uploads--{{ .Params.svg }}" />
+					</svg>
+					{{- else -}}
+					<h1>{{.Title}}</h1>
+					{{- end -}}
+				</div>
+				<div class="work-details">
+					<div class="work-unit work-roles">
+						<h2>Role</h2>
+						<ul>
+							{{ range .Params.roles }}
+								<li>{{ .workrole }}</li>
+							{{ end }}
+						</ul>
+					</div>
+					<div class="work-unit work-date">
+						<h2>Date</h2>
+						{{ .Date.Format "January, 2006" }}
+					</div>
+					<div class="work-unit work-status">
+						<h2>Status</h2>
+						{{- if .Params.isCompleted -}}
+							Completed
+						{{- else -}}
+						 	Work in progress
+						{{- end -}}
+					</div>
+				</div>
+			</div>
+			{{.Content}}
+		</div>
+	</div>
+</div>
+{{ end }}

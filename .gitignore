@@ -1,0 +1,8 @@
+/public
+/node_modules
+
+/static/fonts
+/static/css/app.css
+/static/js/app.js
+
+/functions

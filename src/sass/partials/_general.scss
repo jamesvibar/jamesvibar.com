@@ -1,0 +1,302 @@
+// sass-lint:disable-all
+body{
+    max-width: 1600px;
+    min-width: 300px;
+    margin: 0 auto;
+    // background: $bgColor;
+    font-family: $font-family;
+
+    // &.jv-loading .jv-container {
+    //  animation: fadeInUp 1s;
+    //  animation-timing-function: ease;
+    // }
+
+    // // Site 
+    // &.jv-loading .site-border::before{
+    //  transform: scale(1,0);
+    // }
+
+    // &.jv-loading .site-border::after {
+    //  transform: scale(0,1);
+    // }
+}
+
+svg.icon{ display: block; width: 100%;}
+
+.site-border{
+    pointer-events: none;
+
+    .left-right-site-border, .top-bottom-site-border{
+        content: '';
+        display: block;
+        position: fixed;
+        border: .3em solid darken($border-color3, 20%);
+        z-index: 103;
+        top: 2em;
+        bottom: 2em;
+        right: 2em;
+        left: 2em;
+        transition: transform 2s ease;
+
+        @media screen and (max-width: $break-mobile) {
+            display: none;
+        }
+    }
+
+    .left-right-site-border{
+        transform: scale(1,0);
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .top-bottom-site-border{
+        transform: scale(0,1);
+        border-left: 0;
+        border-right: 0;
+    }
+
+    &.load{
+
+        .left-right-site-border, .top-bottom-site-border{
+            transform: scale(1,1);
+        }
+        
+    }
+}
+
+.main-jv-wrapper{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIAK8fv36PyMR6hhGFeINJZKCBwBvUiWLrsZK4gAAAABJRU5ErkJggg==) repeat;
+}
+
+.jv-wrapper {
+    padding: 4em 4em 4em $header-width;
+
+    @media screen and (max-width: $break-laptop) {
+        padding: 4em 4em 4em $header-width * .8;
+    }
+    @media screen and (max-width: $break-tablet) {
+        padding: 4em 4em 4em $header-width * .6;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        padding: 2em;
+    }
+
+    .jv-container.home{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .jv-container{
+        z-index: 104;
+        position: relative;
+        // animation: fadeInUp 1s;
+        // animation-timing-function: ease;
+
+        $total-width: $flip-card-width * $card-columns + $total-gutter;
+        max-width: $total-width;
+        padding: 2em;
+
+        @media screen and (min-width: $break-2k) {
+            max-width: $total-width * 1.5;
+        }
+
+        @media screen and (min-width: $break-4k) {
+            max-width: $total-width * 2;
+        }
+
+        @media screen and (max-width: $break-mobile) {
+            padding: 4em 0 0 0;
+        }
+
+        .flip-container, .back, .front, .front .front-background-image{
+            // width: $flip-card-width;
+            height: $flip-card-height + px;
+            min-width: $flip-card-width + px;
+            border-radius: 5px;
+
+            @media screen and (max-width: $break-tablet) {
+                height: $flip-card-height * .8;
+                min-width: $flip-card-width * .8;
+            }
+
+            @media screen and (max-width: $break-mobile) {
+                height: $flip-card-height * .7;
+                min-width: $flip-card-width * .7;
+            }
+        }
+
+        .flip-container{
+            perspective: 1000px;
+            box-shadow: 0px 0px 0px 0px #ccc;
+            transition: box-shadow .8s ease;
+            margin: 0 $card-gutter*.4 $card-gutter $card-gutter*.4;
+
+            &.active .flipper{
+                transform: rotateY(-180deg);
+            }
+
+            &.active{
+                transition-delay: .5s;
+                box-shadow: 0px 14px 9px -13px #ccc;
+            }
+
+            &:hover .front .flip-date{
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            &:hover .front .front-background-image{
+                opacity: .4;
+            }
+
+            .flip-permalink{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+                opacity: 0;
+                text-indent: 200%;
+                font-size: 0;
+                white-space: nowrap;
+            }
+
+        }
+
+        .flipper{
+            position: relative;
+            transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d; /** fixes non transitive 3d from parent and child **/
+            transition: transform ease .8s;
+        }
+
+        .front, .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden; //fix for firefox instead of visible
+            transform: rotateX(0deg); //fix for firefox
+        }
+
+        .front{
+            background: $flip-card-front-bg-color;
+            transform: rotateY(-180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .front-background-image{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                transition: opacity 1s ease;
+                background-size: cover;
+            }
+
+            img{
+                width: 100%;
+                display: block;
+                transform: translateY(10px);
+            }
+
+            .logo{
+                max-width: 100px;
+                font-family: $card-logo-font;
+                font-size: 1.5em;
+                transform: translateY(10px);
+                text-align: center;
+
+                @media screen and (max-width: $break-laptop) {
+                    max-width: 80px;
+                }
+            }
+
+
+            .flip-category{
+                font-size: .5em;
+                font-family: $font-family;
+                text-align: center;
+                margin-top: 2.5em;
+            }
+
+            .flip-date{
+                font-size: .5em;
+                font-family: $font-family;
+                text-align: center;
+                color: $black;
+                transform: translateY(10px);
+                transition: all ease .5s;
+                opacity: 0;
+
+                span{transition-delay: .5s;}
+            }
+
+            &::before,&::after{
+                font-size: 2.5em;
+                color: $black;
+                z-index: 1;
+                font-family: $card-logo-font;
+
+                @media screen and (max-width: $break-laptop) {
+                    font-size: 2em;
+                }
+            }
+
+            &::before{
+                content: attr(data-count);
+                position: absolute;
+                top: .5em;
+                left: .5em;
+            }
+
+            &:after{
+                content: attr(data-count);
+                position: absolute;
+                bottom: .5em;
+                right: .5em;
+                transform: rotate(180deg);
+            }
+        }
+
+        .back{
+            background-color: #CCC;
+
+            svg.cardbackbg{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            &.bg0{
+                background: linear-gradient($velvetsun1, $velvetsun2);
+            }
+            &.bg1{
+                background: linear-gradient($sandtoblue1, $sandtoblue2);
+            }
+            &.bg2{
+                background: linear-gradient($brokenhearts1, $brokenhearts2);
+            }
+            &.bg3{
+                background: linear-gradient($honeydew1, $honeydew2);
+            }
+        }
+    }
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}

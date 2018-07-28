@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="main-jv-wrapper barba-container" data-namespace="homepage">
+	<div class="jv-wrapper jv-home"> 
+		<div id="lazy" class="jv-container home">
+
+			{{ range $index, $element := .Data.Pages }}
+			{{ $counter := add $index 1 }}
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="front" data-count="{{ if eq $counter 1 }}A{{else}}{{$counter}}{{end}}">
+						<div class="front-background-image" style="background-image: url('{{ .Params.thumbnail }}');"></div>
+						<div class="logo">
+							{{- if .Params.svg -}}
+							<svg class="icon">
+								<use xlink:href="/images/sprite.symbol.svg#uploads--{{ .Params.svg }}"/>
+							</svg>
+							{{- else -}}
+							<span class="flip-title">{{ .Title }}</span>
+							{{- end -}}
+							<p class="flip-category">{{.Params.category}}</p>
+							<p class="flip-date">{{ now.Year }}</p>
+						</div>
+					</div>
+					<div class="card--back back">
+						<svg class="icon cardbackbg">
+							<use xlink:href="images/sprite.symbol.svg#playingcard"/>
+						</svg>
+					</div>
+				</div>
+				<a class="flip-permalink" href="{{.Permalink}}"></a>
+			</div>
+			{{ end }}
+
+		</div>
+	</div><!-- barba-container -->
+</div>
+{{ end }}

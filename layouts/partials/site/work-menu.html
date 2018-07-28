@@ -1,0 +1,10 @@
+<div id="workmenu" class="work-menu">
+	<div class="work-menu-container group">
+		{{ if .PrevInSection }}
+		<a class="work-prev" href="{{ .PrevInSection.Permalink }}"> < {{ .PrevInSection.Title }} </a>
+		{{ end }}
+		{{ if .NextInSection }}
+		<a class="work-next" href="{{ .NextInSection.Permalink }}"> {{ .PrevInSection.Title }} > </a>
+		{{ end }}
+	</div>
+</div>

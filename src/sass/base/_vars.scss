@@ -1,0 +1,45 @@
+$break-4k: '2000px';
+$break-2k: '1500px';
+$break-laptop: '1024px';
+$break-tablet: '930px';
+$break-mobile: '500px';
+
+// Colors
+$bg-color: #fff;
+$border-color1: #eaeaff;
+$border-color2: #f5eaff;
+$border-color3: #eaf5ff;
+$border-color4: #eafeff;
+$border-color5: #eafff4;
+
+$velvetsun1: #f05053;
+$velvetsun2: #e1eec3;
+
+$sandtoblue1: #3e5151;
+$sandtoblue2: #decba4;
+
+$brokenhearts1: #d9a7c7;
+$brokenhearts2: #fffcdc;
+
+$honeydew1: #43c6ac;
+$honeydew2: #f8ffae;
+
+// Markup
+$header-width: 400px;
+
+// Card Settings
+$card-columns: 3;
+$card-gutter: 20px;
+$total-gutter: $card-gutter * $card-columns;
+
+$flip-card-height: 337;
+$flip-card-width: 232;
+$flip-card-front-bg-color: #fff;
+
+
+// Typography
+$font-family: 'Source Code Pro', monospace;
+$card-logo-font: 'Lora', 'Times New Roman', serif;
+$black: #000;
+$darkgray: #333;
+$lightgray: #777;

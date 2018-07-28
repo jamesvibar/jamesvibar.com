@@ -1,0 +1,232 @@
+// sass-lint:disable border-zero
+.work-jv-wrapper {
+    background: #fff;
+    position: relative;
+}
+
+.work-menu-wrapper {
+    height: 2em;
+}
+
+.work-menu {
+    background: #f1f1f1;
+    height: 2em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: $header-width;
+    z-index: 105;
+
+    @media screen and (max-width: $break-laptop) {
+        left: $header-width * .8;
+    }
+
+    @media screen and (max-width: $break-tablet) {
+        left: $header-width * .6;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3em;
+    }
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .work-menu-container {
+        margin: 0 2em;
+
+        .work-controls {
+            display: block;
+            white-space: nowrap;
+            float: left;
+
+            @media screen and (max-width: $break-mobile) {
+                float: none;
+                margin: 0 auto;
+            }
+        }
+
+        .work-control-divider {
+            margin: 0 .4em;
+        }
+
+        .work-control,
+        .work-home {
+            display: inline-block;
+            line-height: 32px;
+            overflow: hidden;
+
+            @media screen and (max-width: $break-mobile) {
+                line-height: 48px;
+            }
+
+            & > a {
+                display: inline-block;
+                font-size: .9em;
+                text-decoration: none;
+                vertical-align: middle;
+                color: $black;
+
+                &:hover {
+                    color: darken($border-color3, 20%);
+                }
+            }
+        }
+
+        // .work-control {
+        //     float: left;
+        // }
+
+        .work-home {
+            float: right;
+            @media screen and (max-width: $break-mobile) {
+                display: none;
+            }
+        }
+
+        // .work-prev{
+        //     float: left;
+        // }
+
+        // .work-next{
+        //     float: right;
+        // }
+    }
+}
+
+.work-container {
+    background: none;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 1000px;
+    font-size: .9em;
+    line-height: 1.8em;
+    color: $black;
+    z-index: 104;
+    position: relative;
+
+    p {
+        text-align: left;
+        letter-spacing: .0625em;
+        margin: 0 0 1.42857em;
+    }
+
+    h2 {
+        color: darken($border-color3, 60%);
+        text-transform: uppercase;
+        letter-spacing: .1875em;
+        line-height: 1;
+        font-size: .875em;
+        font-weight: 400;
+        margin: 0 0 .71429em;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        padding: 4em 0 0;
+        font-size: .8em;
+
+        p {letter-spacing: .0525em;}
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .image-container {
+        padding: 0 0 4em;
+
+        @media screen and (max-width: $break-mobile) {
+            padding: 0 0 2em;
+        }
+    }
+
+    .image--bordered {
+        border: 2px solid #f1f1f1;
+    }
+
+    .work-header {
+
+        .work-logo,
+        .work-details {
+            float: left;
+        }
+
+        .work-logo {
+            width: 30%;
+            border-right: 1px solid #f1f1f1;
+            box-sizing: border-box;
+            padding: 0 1em;
+        }
+
+        .work-details {
+            width: 70%;
+        }
+
+        .work-svg {
+            display: block;
+            width: 100%;
+            min-width: 100px;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 800px) {
+            .work-logo,
+            .work-details {float: none;}
+
+            .work-logo {
+                width: 100%;
+                border-right: none;
+                padding: 0;
+            }
+            .work-svg {margin: 0 0 1.725em;}
+        }
+
+        @media screen and (max-width: $break-mobile) {
+            .work-logo {margin-bottom: 3em;}
+        }
+    }
+
+    .work-details {
+        margin-bottom: 5em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: $break-mobile) {
+            display: block;
+        }
+
+        .work-unit {
+            padding: 0 1em;
+            box-sizing: border-box;
+            white-space: nowrap;
+            margin-bottom: 1.5em;
+
+            @media screen and (max-width: $break-mobile) {
+                padding: 0;
+            }
+
+            @media screen and (max-width: 800px) {
+                padding: 0;
+            }
+        }
+
+        .work-roles > ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.4;
+            margin: 0;
+        }
+    }
+}

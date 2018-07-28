@@ -1,0 +1,67 @@
+// sass-lint:disable border-zero
+.sidebar {
+    width: $header-width;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #fff url('../images/header-bg.jpg') no-repeat center -400px;
+    text-align: center;
+    padding: 4em 2em 2em 4em;
+    box-sizing: border-box;
+    border-right: .3em solid #f1f1f1;
+    overflow-y: auto;
+
+    @media screen and (max-width: $break-laptop) {
+        width: $header-width * .8;
+    }
+
+    @media screen and (max-width: $break-tablet) {
+        width: $header-width * .6;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+        width: 100%;
+        position: static;
+        padding: 2em;
+        border-right: none;
+        border-bottom: .3em solid #f1f1f1;
+    }
+
+    .logo {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        max-width: 150px;
+
+        svg {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .header-info {
+        margin-top: 3em;
+
+        .header-divider {
+            width: 30px;
+            border: none;
+            height: 1px;
+            background: $black;
+            margin: 1.8em auto;
+        }
+
+        & > h1 {
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 1em;
+        }
+
+        & > p {
+            font-size: .8em;
+            color: $lightgray;
+            line-height: 1.7em;
+        }
+    }
+}
