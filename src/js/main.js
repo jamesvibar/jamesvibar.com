@@ -196,7 +196,19 @@ function init(g, initialLoad){
 		var stickyOffset = workMenu.offset().top;
 	}
 
-	$(document).on("scroll", function() {
+	// $(document).on("scroll", function() {
+	// 	if(g.isMobile) {
+	// 		var scroll = $(window).scrollTop();
+
+	// 		if (scroll >= stickyOffset) {
+	// 			workMenu.addClass('fixed');
+	// 		} else {
+	// 			workMenu.removeClass('fixed');
+	// 		}
+	// 	}
+	// });
+
+	$(document).on("scroll", debounce(function() {
 		if(g.isMobile) {
 			var scroll = $(window).scrollTop();
 
@@ -206,21 +218,7 @@ function init(g, initialLoad){
 				workMenu.removeClass('fixed');
 			}
 		}
-		console.log(g.isMobile);
-	});
-
-	// $(document).on("scroll", debounce(function() {
-	// 	if(g.isMobile) {
-	// 		var sticky = $('#workmenu');
-	// 		var scroll = $(window).scrollTop();
-
-	// 		if (scroll >= stickyOffset) {
-	// 			sticky.addClass('fixed');
-	// 		} else {
-	// 			sticky.removeClass('fixed');
-	// 		}
-	// 	}
-	// }, 100))
+	}, 100))
 
 	// Set isMobile to true or false on window resize.
 	$(window).on("resize", debounce(function() {
