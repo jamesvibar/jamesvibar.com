@@ -3,8 +3,8 @@ backend:
   repo: jamesvibar/jamesvibar.com
   branch: master
   
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/images"
+public_folder: "/images"
 
 collections:
   - name: "works"
@@ -13,14 +13,3 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Category", name: "category", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Logo", name: "svg", widget: "string", required: false}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
-      - {label: "Completed", name: "isCompleted", widget: "boolean", required: false}
-      - label: "Roles"
-        name: "roles"
-        widget: "list"
-        fields:
-          - {label: "Role", name: "workrole", widget: "string"}
