@@ -1,13 +1,12 @@
 ---
-title: Sockalicious
-date: 2017-05-05
-category: Design & Development
-svg: sockalicious
-thumbnail: /images/uploads/sockalicious-thumb.jpg
+title: Arthive
+date: 2017-03-22
+category: Design
+svg: arthive
+thumbnail: /images/uploads/arthive-thumb.jpg
 roles:
 - workrole: Art Direction
 - workrole: Design
-- workrole: Development
 isCompleted: true
 ---
 
@@ -21,4 +20,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel laboriosam ips
 
 ## Deployment
 
-[https://www.sockalicious.com/](https://www.sockalicious.com/)
+A html version of the design can be found at : [http://arthive.paperplane.io/](http://arthive.paperlane.io/)
