@@ -18,7 +18,7 @@
 							<span class="flip-title">{{ .Title }}</span>
 							{{- end -}}
 							<p class="flip-category">{{.Params.category}}</p>
-							<p class="flip-date">{{ now.Year }}</p>
+							<p class="flip-date">{{ .Date.Format "2006" }}</p>
 						</div>
 					</div>
 					<div class="card--back back">
