@@ -5,9 +5,9 @@ category: web
 svg: sockalicious
 thumbnail: /images/uploads/sockalicious-thumb.jpg
 roles:
-	- workrole: Art Direction
-	- workrole: Design
-	- workrole: Development
+- workrole: Art Direction
+- workrole: Design
+- workrole: Development
 isCompleted: true
 ---
 
