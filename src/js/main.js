@@ -252,7 +252,7 @@ $(function() {
 	var pHandler = JV.General.preloadHandler(g, anim);
 	init(g, initialLoad);
 
-	if(!g.isMobile && transitionsReady) {
+	if(transitionsReady) {
 		Barba.Pjax.init();
 		Barba.Prefetch.init();
 		Barba.Dispatcher.on('transitionCompleted', function (currentStatus, oldStatus, container) {
