@@ -224,7 +224,11 @@ function init(g, initialLoad){
 	$(window).on("resize", debounce(function() {
 		if(isMobile.matches){
 			g.isMobile = true;
-			stickyOffset = workMenu.offset().top;
+
+			if($('.work-container').length) {
+				stickyOffset = workMenu.offset().top;
+			}
+			
 		} else {
 			g.isMobile = false;
 		}
