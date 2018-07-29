@@ -113,6 +113,11 @@
     z-index: 104;
     position: relative;
 
+    hr{
+        margin: 4em 0;
+        border: none;
+    }
+
     p {
         text-align: left;
         letter-spacing: .0625em;
@@ -155,7 +160,7 @@
     }
 
     .work-header {
-        margin-bottom: 4em;
+        margin-bottom: 9em;
 
         .work-logo,
         .work-details {
