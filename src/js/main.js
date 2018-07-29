@@ -192,8 +192,20 @@ function init(g, initialLoad){
 	}
 
 	// Listen for scroll event and position: fixed the nav upon reaching the navigation
-	if($('.work-jv-wrapper').length > 0 ) {
+	if($('.work-container').length > 0 && g.isMobile) {
 		var stickyOffset = workMenu.offset().top;
+
+		$(document).on("scroll", debounce(function() {
+			if(g.isMobile) {
+				var scroll = $(window).scrollTop();
+
+				if (scroll >= stickyOffset) {
+					workMenu.addClass('fixed');
+				} else {
+					workMenu.removeClass('fixed');
+				}
+			}
+		}, 100))
 	}
 
 	// $(document).on("scroll", function() {
@@ -207,18 +219,6 @@ function init(g, initialLoad){
 	// 		}
 	// 	}
 	// });
-
-	$(document).on("scroll", debounce(function() {
-		if(g.isMobile) {
-			var scroll = $(window).scrollTop();
-
-			if (scroll >= stickyOffset) {
-				workMenu.addClass('fixed');
-			} else {
-				workMenu.removeClass('fixed');
-			}
-		}
-	}, 100))
 
 	// Set isMobile to true or false on window resize.
 	$(window).on("resize", debounce(function() {
