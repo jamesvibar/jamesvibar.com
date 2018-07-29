@@ -286,10 +286,7 @@ $(function() {
 					});
 				} else {
 					$(_this.oldContainer).css({
-						position: "absolute",
-						top: 0,
-						left: 0,
-						right: 0
+						position: "absolute"
 					});
 					TweenMax.to($(_this.oldContainer), .25, { 
 						autoAlpha: 0,
