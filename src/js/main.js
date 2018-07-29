@@ -259,10 +259,10 @@ $(function() {
 		var FadeTransition = Barba.BaseTransition.extend({
 			start: function() {
 				Promise
-					.all([this.newContainerLoading, this.scrollTop()])
+					.all([this.newContainerLoading, this.scrollUp()])
 					.then(this.fade.bind(this))
 			},
-			scrollTop: function() {
+			scrollUp: function() {
 				var _this = this;
 				var deferred = Barba.Utils.deferred();
 				if ($(window).scrollTop() > 0){
