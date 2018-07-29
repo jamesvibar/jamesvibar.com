@@ -21,7 +21,7 @@ Old Jamesvibar.com (not a fun title to be honest), is the first website I have d
 ![Old James Vibar Logo][logo1]
 {{< img-bordered src="/images/uploads/old-jamesvibar-logo-2.jpg" alt="Old James Vibar Logo">}}
 ![Old James Vibar Secondary Font][secondaryfont]
-![Old James Vibar Primary Font][primaryfont]
+{{< img-bordered src="/images/uploads/old-jamesvibar-primary-font.jpg" alt="Old James Vibar Logo">}}
 
 ***
 
