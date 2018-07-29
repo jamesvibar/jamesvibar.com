@@ -225,10 +225,10 @@ function init(g, initialLoad){
 		if(isMobile.matches){
 			g.isMobile = true;
 
-			if($('.work-container').length) {
+			if($('.work-container').length > 0 && g.isMobile) {
 				stickyOffset = workMenu.offset().top;
 			}
-			
+
 		} else {
 			g.isMobile = false;
 		}
