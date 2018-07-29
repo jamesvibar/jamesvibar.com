@@ -177,6 +177,7 @@ function debounce(func, wait, immediate) {
 function init(g, initialLoad){
 	var anim = JV.Animations(g);
 	var isMobile = window.matchMedia("only screen and (max-width: 500px)");
+
 	var workMenu = g.workMenu;
 
 	// Set isMobile to true or false on refresh
@@ -193,16 +194,16 @@ function init(g, initialLoad){
 
 	// Listen for scroll event and position: fixed the nav upon reaching the navigation
 	if($('.work-container').length > 0 && g.isMobile) {
-		var stickyOffset = workMenu.offset().top;
+		var stickyOffset = $('#workmenu').offset().top;
 
 		$(document).on("scroll", debounce(function() {
 			if(g.isMobile) {
 				var scroll = $(window).scrollTop();
 
 				if (scroll >= stickyOffset) {
-					workMenu.addClass('fixed');
+					$('#workmenu').addClass('fixed');
 				} else {
-					workMenu.removeClass('fixed');
+					$('#workmenu').removeClass('fixed');
 				}
 			}
 		}, 100))
@@ -213,9 +214,9 @@ function init(g, initialLoad){
 	// 		var scroll = $(window).scrollTop();
 
 	// 		if (scroll >= stickyOffset) {
-	// 			workMenu.addClass('fixed');
+	// 			$('#workmenu').addClass('fixed');
 	// 		} else {
-	// 			workMenu.removeClass('fixed');
+	// 			$('#workmenu').removeClass('fixed');
 	// 		}
 	// 	}
 	// });
@@ -225,17 +226,15 @@ function init(g, initialLoad){
 		if(isMobile.matches){
 			g.isMobile = true;
 
-			if($('.work-container').length > 0 && g.isMobile) {
-				stickyOffset = workMenu.offset().top;
-			}
+			stickyOffset = $('#workmenu').offset().top;
 
 		} else {
 			g.isMobile = false;
 		}
 
 		// If nav has sticky on resize and its not in mobile, remove it.
-		if( workMenu.hasClass('fixed') && !g.isMobile ) {
-			workMenu.removeClass('fixed');
+		if( $('#workmenu').hasClass('fixed') && !g.isMobile ) {
+			$('#workmenu').removeClass('fixed');
 		}
 
 	}, 200))
