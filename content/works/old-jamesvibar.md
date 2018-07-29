@@ -27,6 +27,10 @@ Old Jamesvibar.com (not a fun title to be honest), is the first website I have d
 
 ## The Product
 
+***
+
+This is how the design looks like live and fully fleshed out!
+
 ![Old James Vibar iMac][imac]
 ![Old James Vibar iMac][iphone]
 ![Old James Vibar Home][home]
