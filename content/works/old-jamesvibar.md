@@ -17,7 +17,7 @@ I think for most creatives and designers, one of the biggest challenges in their
 Old Jamesvibar.com (not a fun title to be honest), is the first website I have designed and developed.
 
 ![Old James Vibar Logo][logo1]
-{{< src="/images/uploads/old-jamesvibar-logo-2.jpg" alt="Old James Vibar Logo">}}
+{{< img-bordered src="[logo2]" alt="Old James Vibar Logo">}}
 ![Old James Vibar Primary Font][primaryfont]
 ![Old James Vibar Secondary Font][secondaryfont]
 
