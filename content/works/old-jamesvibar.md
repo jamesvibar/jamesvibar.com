@@ -19,8 +19,11 @@ Old Jamesvibar.com (not a fun title to be honest), is the first website I have d
 ***
 
 ![Old James Vibar Logo][logo1]
+
 {{< img-bordered src="/images/uploads/old-jamesvibar-logo-2.jpg" alt="Old James Vibar Logo">}}
+
 ![Old James Vibar Secondary Font][secondaryfont]
+
 {{< img-bordered src="/images/uploads/old-jamesvibar-primary-font.jpg" alt="Old James Vibar Logo">}}
 
 ***
@@ -32,7 +35,9 @@ This is how the design looks like live and fully fleshed out!
 ***
 
 ![Old James Vibar iMac][imac]
+
 ![Old James Vibar iMac][iphone]
+
 ![Old James Vibar Home][home]
 
 [logo1]: /images/uploads/old-jamesvibar-logo-1.jpg
