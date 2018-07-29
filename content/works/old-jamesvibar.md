@@ -5,15 +5,32 @@ category: Design & Development
 svg: old-jamesvibar
 thumbnail: /images/uploads/old-jamesvibar-thumb.jpg
 roles:
-- workrole: Design
+- workrole: Visual Design
 - workrole: Development
 isCompleted: true
 ---
 
-## Design Process
+## The First Step
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa numquam ad non ea possimus, fugit, dolores. Nostrum, quia atque!
+I think for most creatives and designers, one of the biggest challenges in their profession is to try and create their own personal portfolio. Somehow, no matther how hard you try, you end up in a cycle of frustration chasing for perfection.
 
-## Development
+Old Jamesvibar.com (not a fun title to be honest), is the first website I have designed and developed.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel laboriosam ipsam itaque atque doloremque, id enim laborum ea consequatur repellat consequuntur alias, cumque. Consectetur fugiat cum laudantium nesciunt omnis.
+![Old James Vibar Logo][logo1]
+{{< src="[logo2]" alt="Old James Vibar Logo">}}
+![Old James Vibar Primary Font][primaryfont]
+![Old James Vibar Secondary Font][secondaryfont]
+
+## The Product
+
+![Old James Vibar iMac][imac]
+![Old James Vibar iMac][iphone]
+![Old James Vibar Home][home]
+
+[logo1]: /images/uploads/old-jamesvibar-logo-1.jpg
+[logo2]: /images/uploads/old-jamesvibar-logo-2.jpg
+[primaryfont]: /images/uploads/old-jamesvibar-primary-font.jpg
+[secondaryfont]: /images/uploads/old-jamesvibar-secondary-font.jpg
+[imac]: /images/uploads/old-jamesvibar-mockup-imac.jpg
+[iphone]: /images/uploads/old-jamesvibar-mockup-iphone.jpg
+[home]: /images/uploads/old-jamesvibar-home.jpg
