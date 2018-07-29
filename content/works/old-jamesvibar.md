@@ -12,7 +12,7 @@ isCompleted: true
 
 ## The First Step
 
-I think for most creatives and designers, one of the biggest challenges in their profession is to try and create their own personal portfolio. Somehow, no matther how hard you try, you end up in a cycle of frustration chasing for perfection.
+I think for most creatives and designers, one of the biggest challenges in their profession is to try and create their own personal portfolio. Somehow, no matter how hard you try, you end up in a cycle of frustration chasing for perfection.
 
 Old Jamesvibar.com (not a fun title to be honest), is the first website I have designed and developed.
 
