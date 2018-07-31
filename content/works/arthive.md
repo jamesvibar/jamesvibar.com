@@ -13,6 +13,8 @@ isCompleted: true
 
 The basic idea behind arthive is to create a place for like-minded artists to display their work.
 
+***
+
 ![Arthive Logo][logo1]
 
 {{< img-bordered src="/images/uploads/arthive-logo-2.jpg" alt="Arthive Logo">}}

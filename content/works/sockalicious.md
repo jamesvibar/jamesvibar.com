@@ -16,6 +16,8 @@ isCompleted: true
 
 One of major key of running a successful ecommerce website is having a good design presence. The idea behind Sockalicious is built around being fun and enjoyable.
 
+***
+
 ![Sockalicious Logo][logo1]
 
 {{< img-bordered src="/images/uploads/sockalicious-logo-2.jpg" alt="Arthive Logo">}}
