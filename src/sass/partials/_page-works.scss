@@ -134,6 +134,14 @@
         margin: 0 0 .71429em;
     }
 
+    a {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
     @media screen and (max-width: $break-mobile) {
         padding: 4em 0 0;
         font-size: .8em;

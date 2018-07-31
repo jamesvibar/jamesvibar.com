@@ -5,19 +5,47 @@ category: Design
 svg: arthive
 thumbnail: /images/uploads/arthive-thumb.jpg
 roles:
-- workrole: Art Direction
-- workrole: Design
+- workrole: Visual Design
 isCompleted: true
 ---
 
-## Design Process
+## Collection of Art From Geniuses
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet culpa numquam ad non ea possimus, fugit, dolores. Nostrum, quia atque!
+The basic idea behind arthive is to create a place for like-minded artists to display their work.
 
-## Development
+![Arthive Logo][logo1]
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vel laboriosam ipsam itaque atque doloremque, id enim laborum ea consequatur repellat consequuntur alias, cumque. Consectetur fugiat cum laudantium nesciunt omnis.
+{{< img-bordered src="/images/uploads/arthive-logo-2.jpg" alt="Arthive Logo">}}
+
+![Arthive Primary Font][primaryfont]
+
+{{< img-bordered src="/images/uploads/arthive-secondary-font.jpg" alt="Arthive Secondary Font">}}
+
+***
+
+## Diagonally Split
+
+***
+
+![Arthive iMac][imac]
+
+![Arthive Home][home]
+![Arthive About][about]
+![Arthive Collection][about]
+![Arthive Contact][contact]
+
+***
 
 ## Deployment
 
-A html version of the design can be found at : [http://arthive.paperplane.io/](http://arthive.paperlane.io/)
+A html version of the design can be found at : [http://arthive.paperplane.io/](http://arthive.paperplane.io/)
+
+[logo1]: /images/uploads/arthive-logo-1.jpg
+[logo2]: /images/uploads/arthive-logo-2.jpg
+[primaryfont]: /images/uploads/arthive-primary-font.jpg
+[secondaryfont]: /images/uploads/arthive-secondary-font.jpg
+[imac]: /images/uploads/arthive-mockup-imac.jpg
+[home]: /images/uploads/arthive-home.jpg
+[about]: /images/uploads/arthive-about.jpg
+[collection]: /images/uploads/arthive-collection.jpg
+[contact]: /images/uploads/arthive-contact.jpg
