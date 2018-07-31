@@ -122,6 +122,11 @@
         text-align: left;
         letter-spacing: .0625em;
         margin: 0 0 1.42857em;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+        hyphens: auto;
     }
 
     h2 {
@@ -132,14 +137,6 @@
         font-size: .875em;
         font-weight: 400;
         margin: 0 0 .71429em;
-    }
-
-    a {
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        word-break: break-all;
-        word-break: break-word;
-        hyphens: auto;
     }
 
     @media screen and (max-width: $break-mobile) {

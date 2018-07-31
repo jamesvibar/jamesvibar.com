@@ -30,8 +30,11 @@ The basic idea behind arthive is to create a place for like-minded artists to di
 ![Arthive iMac][imac]
 
 ![Arthive Home][home]
+
 ![Arthive About][about]
+
 ![Arthive Collection][about]
+
 ![Arthive Contact][contact]
 
 ***
