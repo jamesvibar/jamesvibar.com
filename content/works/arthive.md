@@ -23,7 +23,7 @@ The basic idea behind arthive is to create a place for like-minded artists to di
 
 ***
 
-## Diagonally Split
+## The Design
 
 ***
 
