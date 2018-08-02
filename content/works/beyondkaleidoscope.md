@@ -25,7 +25,7 @@ The idea behind the design is to create a bridge between modern design and aesth
 
 ![Beyond Kaleidoscope Font][primaryfont]
 
-{{< img-bordered src="/images/uploads/beyondkaleidoscope-secondary-font.jpg" alt="Beyond Kaleidoscope Font">}}
+{{< img-bordered src="/images/uploads/beyondkaleidoscope-primary-font.jpg" alt="Beyond Kaleidoscope Font">}}
 
 ![Beyond Kaleidoscope Color][color1]
 
