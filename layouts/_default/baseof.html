@@ -14,11 +14,23 @@
             <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
         {{ end }}
 
-        {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+        {{- block "site/styles" . -}}{{- partial "site/styles.html" . -}}{{- end -}}
     
-        {{ if eq .Kind "home" }}
+        {{- if eq .Kind "home" -}}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        {{ end }}
+        {{- end -}}
+
+        {{- if .Site.GoogleAnalytics -}}
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115901002-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '{{ .Site.GoogleAnalytics}}');
+        </script>
+        {{- end -}}
         
     </head>
     <body>

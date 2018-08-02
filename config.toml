@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-gb"
 title = "James Vibar, Web Designer / Developer"
+googleAnalytics = "UA-115901002-2"
 
 enableRobotsTXT = true
 disableAliases = true
