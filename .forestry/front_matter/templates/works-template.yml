@@ -38,3 +38,5 @@ fields:
 - type: boolean
   name: isCompleted
   label: Completed
+pages:
+- content/works/test-work.md
