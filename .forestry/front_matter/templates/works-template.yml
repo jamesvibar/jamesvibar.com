@@ -1,0 +1,40 @@
+---
+label: Works Template
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: text
+  label: category
+  name: category
+  config:
+    required: true
+- type: file
+  name: svg
+  label: svg
+  config:
+    maxSize: '25'
+- type: file
+  label: thumbnail
+  name: thumbnail
+- type: field_group
+  name: roles
+  label: Roles
+  fields:
+  - type: text
+    name: workrole
+    label: workrole
+    config:
+      required: false
+- type: boolean
+  name: isCompleted
+  label: Completed
