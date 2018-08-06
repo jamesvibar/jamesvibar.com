@@ -30,16 +30,18 @@ fields:
   name: isCompleted
   label: Completed
 - type: field_group_list
-  name: works
-  label: Works
-  description: Your role
-  config:
-    min: '1'
-    labelField: workrole
+  name: roles
+  label: Roles
+  description: ''
   fields:
   - type: text
     name: workrole
     label: workrole
+  - type: text
+    name: workrole
+    label: workrole
+  config:
+    labelField: workrole
 pages:
 - content/works/forestry-test.md
 - content/works/test-work.md
