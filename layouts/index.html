@@ -11,8 +11,13 @@
 						<div class="front-background-image" style="background-image: url('{{ .Params.thumbnail }}');"></div>
 						<div class="logo">
 							{{- if .Params.svg -}}
+
+							{{- $removeSlash := slicestr .Params.svg 16 -}}
+							{{- $removeDot := split $removeSlash "." -}}
+							{{- $svgPath := index $removeDot 0 -}}
+
 							<svg class="icon">
-								<use xlink:href="/images/sprite.symbol.svg#uploads--{{ .Params.svg }}"/>
+								<use xlink:href="/images/sprite.symbol.svg#uploads--{{ $svgPath }}"/>
 							</svg>
 							{{- else -}}
 							<span class="flip-title">{{ .Title }}</span>
