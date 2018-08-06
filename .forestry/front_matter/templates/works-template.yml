@@ -29,6 +29,17 @@ fields:
 - type: boolean
   name: isCompleted
   label: Completed
+- type: field_group_list
+  name: works
+  label: Works
+  description: Your role
+  config:
+    min: '1'
+    labelField: workrole
+  fields:
+  - type: text
+    name: workrole
+    label: workrole
 pages:
 - content/works/forestry-test.md
 - content/works/test-work.md
