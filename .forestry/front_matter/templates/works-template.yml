@@ -37,4 +37,5 @@ fields:
   name: isCompleted
   label: Completed
 pages:
+- content/works/forestry-test.md
 - content/works/test-work.md
