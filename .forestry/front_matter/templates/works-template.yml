@@ -26,13 +26,6 @@ fields:
 - type: file
   label: thumbnail
   name: thumbnail
-- type: field_group_list
-  name: roles
-  label: Roles
-  fields:
-  - type: text
-    name: workrole
-    label: workrole
 - type: boolean
   name: isCompleted
   label: Completed
