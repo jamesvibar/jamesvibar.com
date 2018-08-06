@@ -2,7 +2,7 @@
 title: Old Jamesvibar.com
 date: 2017-01-15
 category: Design & Development
-svg: old-jamesvibar
+svg: /images/uploads/old-jamesvibar.svg
 thumbnail: /images/uploads/old-jamesvibar-thumb.jpg
 roles:
 - workrole: Visual Design

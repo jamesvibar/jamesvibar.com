@@ -2,7 +2,7 @@
 title: Arthive
 date: 2017-03-22
 category: Design
-svg: arthive
+svg: /images/uploads/arthive.svg
 thumbnail: /images/uploads/arthive-thumb.jpg
 roles:
 - workrole: Visual Design

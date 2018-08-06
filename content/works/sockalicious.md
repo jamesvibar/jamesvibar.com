@@ -2,7 +2,7 @@
 title: Sockalicious
 date: 2017-05-05
 category: Design & Development
-svg: sockalicious
+svg: /images/uploads/sockalicious.svg
 thumbnail: /images/uploads/sockalicious-thumb.jpg
 roles:
 - workrole: Art Direction

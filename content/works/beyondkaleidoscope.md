@@ -2,7 +2,7 @@
 title: Beyond Kaleidoscope
 date: 2018-03-21
 category: Design & Development
-svg: beyondkaleidoscope
+svg: /images/uploads/beyondkaleidoscope.svg
 thumbnail: /images/uploads/beyondkaleidoscope-thumb.jpg
 roles:
 - workrole: Visual Design
