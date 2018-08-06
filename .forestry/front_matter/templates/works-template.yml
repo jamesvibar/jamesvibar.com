@@ -37,9 +37,6 @@ fields:
   - type: text
     name: workrole
     label: workrole
-  - type: text
-    name: workrole
-    label: workrole
   config:
     labelField: workrole
 pages:
