@@ -26,8 +26,11 @@
 			<div class="work-header group">
 				<div class="work-logo">
 					{{- if .Params.svg -}}
+					{{- $removeSlash := slicestr .Params.svg 16 -}}
+					{{- $removeDot := split $removeSlash "." -}}
+					{{- $svgPath := index $removeDot 0 -}}
 					<svg class="work-svg">
-						<use xlink:href="/images/sprite.symbol.svg#uploads--{{ .Params.svg }}" />
+						<use xlink:href="/images/sprite.symbol.svg#uploads--{{ $svgPath }}" />
 					</svg>
 					{{- else -}}
 					<h1>{{.Title}}</h1>
