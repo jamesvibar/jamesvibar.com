@@ -17,7 +17,6 @@
         {{- block "site/styles" . -}}{{- partial "site/styles.html" . -}}{{- end -}}
     
         {{- if eq .Kind "home" -}}
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         {{- end -}}
 
         {{- if .Site.GoogleAnalytics -}}
