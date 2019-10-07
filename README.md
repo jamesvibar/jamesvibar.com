@@ -1,12 +1,6 @@
-[![Atlas, Hugo Boilerplate](https://atlas.indigotree.co.uk/images/github-banner.png)](https://github.com/indigotree/atlas)
+# jamesvibar.com
 
-![](http://forthebadge.com/images/badges/uses-badges.svg) ![](http://forthebadge.com/images/badges/built-by-developers.svg) ![](http://forthebadge.com/images/badges/gluten-free.svg)
-
-# Atlas
-
-The [Hugo](https://gohugo.io/) boilerplate we use for our projects.
-
-**Disclaimer** - This boilerplate has been heavily integrated with [Netlify](https://www.netlify.com/), and therefore many features are specific to the Netlify platform and may not work with other hosting providers.
+Hugo template for jamesvibar.com
 
 **Disclaimer** - Atlas is a boilerplate (starter kit) for bespoke Hugo projects. It's not a Hugo theme and cannot be placed inside the `/themes` directory. Check the [theme](#themes) docs for more information.
 
@@ -47,26 +41,6 @@ There are 3 commands available:
 A default robots.txt can be found at `/layouts/robots.txt` which is configured to disallow crawlers when the `HUGO_ENV` environment variable is **not** set to `"production"`.
 
 The default behaviour is to disallow search engines on "branch" deployments. If you're using split testing, you will need to modify the default robots.txt template to ensure your branch deployments can be indexed.
-
-## Functions
-
-Atlas has `netlify-lambda` installed out of the box to make working with Netlify Functions that much easier. Functions should be made inside `src/lambda` and should end in the `.js` extension. They will be compiled into `/functions` where Netlify will recognise them and deploy them automatically.
-
-Here is an example that you can start from:
-
-```
-exports.handler = (event, context, callback) => {
-    callback(null, {
-        statusCode: 200,
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            message: "Hi from Lambda."
-        })
-    });
-}
-```
 
 ## Headers
 
